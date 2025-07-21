@@ -25,9 +25,13 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-accent-gradient shadow-glow flex items-center justify-center">
-            <span className="text-4xl font-bold text-white">VS</span>
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow border-4 border-white/20">
+            <img 
+              src="/lovable-uploads/f220cb50-0024-4aeb-9898-d69345fae51a.png" 
+              alt="Virendra Sahu - Profile" 
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Main Content */}
