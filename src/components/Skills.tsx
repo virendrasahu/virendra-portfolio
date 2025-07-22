@@ -24,7 +24,7 @@ const Skills = () => {
   const tools = [
     'Git & GitHub', 'VS Code', 'Postman', 'Figma', 
     'n8n', '11 Labs', 'Lovable', 'MCP Server',
-    'Supbase', 'Lovable', 'Firebase', 'Netlify',
+    'Supabase', 'Lovable', 'Firebase', 'Netlify',
     'Vercel', 'Render', 
   ];
 
