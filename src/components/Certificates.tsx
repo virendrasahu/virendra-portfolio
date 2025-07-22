@@ -6,7 +6,7 @@ const Certificates = () => {
     {
       title: 'Static Website',
       url: 'https://certificates.ccbp.in/academy/static-website?id=BVEQVXXBRL',
-      image: 'src/assets/Static.png'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753182951/Static_gvtrip.png'
     },
     {
       title: 'Build Your Own Responsive Website',
