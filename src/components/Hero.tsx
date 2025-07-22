@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
-          <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow border-4 border-white/20">
+          <div className="w-32 h-32 mx-auto mb-8 mt-20 rounded-full overflow-hidden shadow-glow border-4 border-white/20">
             <img 
               src="https://res.cloudinary.com/dmljpnbpu/image/upload/v1753174614/1752389260340_50_-_Copy_1_wv4lcf.jpg" 
               alt="Virendra Sahu - Profile" 
@@ -82,7 +82,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
@@ -97,6 +97,24 @@ const Hero = () => {
               onClick={() => scrollToSection('contact')}
             >
               Get In Touch
+            </Button>
+          </div>
+
+          {/* Download Resume Button */}
+          <div className="mb-12">
+            <Button 
+              size="lg" 
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg rounded-xl border border-white/10"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Virendra_Sahu_Resume.pdf';
+                link.download = 'Virendra_Sahu_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              Download Resume
             </Button>
           </div>
 
