@@ -39,7 +39,7 @@ const About = () => {
                   <div className="relative">
                     <div className="w-72 h-96 rounded-2xl overflow-hidden shadow-card">
                       <img 
-                        src="/lovable-uploads/1dbd79c6-8f5c-4330-b5f6-562134c6a62a.png" 
+                        src="https://res.cloudinary.com/dmljpnbpu/image/upload/v1753098000/1752389260340_50_ofye9e.jpg" 
                         alt="Virendra Sahu - Full Image" 
                         className="w-full h-full object-cover"
                       />
