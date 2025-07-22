@@ -11,47 +11,47 @@ const Certificates = () => {
     {
       title: 'Build Your Own Responsive Website',
       url: 'https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=TJTYFASKTR',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183190/Responsive_w69luj.png'
     },
     {
       title: 'Programming Foundations with Python',
       url: 'https://certificates.ccbp.in/academy/programming-foundations-with-python?id=SLVJRUCNYV',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183189/Python_qbbean.png'
     },
     {
       title: 'Introduction to Databases',
       url: 'https://certificates.ccbp.in/academy/introduction-to-databases?id=UFCISZQGDJ',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183190/SQL_rxufmi.png'
     },
     {
       title: 'Dynamic Web Application',
       url: 'https://certificates.ccbp.in/academy/dynamic-web-application?id=PHBCINWEHR',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183189/JavaScript_c8qw7y.png'
     },
     {
       title: 'Responsive Web Design using Flexbox',
       url: 'https://certificates.ccbp.in/academy/responsive-web-design-using-flexbox?id=RFOBNCCVZX',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183190/Responsive_w69luj.png'
     },
     {
       title: 'JavaScript Essentials',
       url: 'https://certificates.ccbp.in/academy/javascript-essentials?id=FGTUHYQSRF',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183189/JS_Essential_xtcn3v.png'
     },
     {
       title: 'Developer Foundations',
       url: 'https://certificates.ccbp.in/academy/developer-foundations?id=FBSWJMXXER',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183189/Developer_Foundation_Git_icpmbo.png'
     },
     {
       title: 'Node.js',
       url: 'https://certificates.ccbp.in/academy/node-js?id=GPKBZXLPLT',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183191/Node_js_Certificate_pptyrc.png'
     },
     {
       title: 'XPM 4.0 Fundamentals',
       url: 'https://certificates.ccbp.in/academy/xpm-4-0-fundamentals?id=TRQYEZFRQT',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop'
+      image: 'https://res.cloudinary.com/dmljpnbpu/image/upload/v1753183191/XPM_Fundamentals_onmpn3.png'
     }
   ];
 
