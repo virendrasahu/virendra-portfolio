@@ -6,6 +6,7 @@ const Skills = () => {
     { name: 'HTML', category: 'Frontend' },
     { name: 'CSS', category: 'Frontend' },
     { name: 'Bootstrap', category: 'Frontend' },
+    { name: 'Tailwind', category: 'Frontend' },
     { name: 'JavaScript', category: 'Frontend' },
     { name: 'React.js', category: 'Frontend' },
     { name: 'Node.js', category: 'Backend' },
@@ -15,13 +16,16 @@ const Skills = () => {
     { name: 'SQLite', category: 'Database' },
     { name: 'AWS', category: 'Cloud' },
     { name: 'Git', category: 'Tools' },
+    { name: 'VS Code', category: 'Tools' },
     { name: 'Flexbox', category: 'Frontend' },
     { name: 'OOPs', category: 'Concepts' },
   ];
 
   const tools = [
     'Git & GitHub', 'VS Code', 'Postman', 'Figma', 
-    'n8n', '11 Labs', 'Lovable', 'MCP Server'
+    'n8n', '11 Labs', 'Lovable', 'MCP Server',
+    'Supbase', 'Lovable', 'Firebase', 'Netlify',
+    'Vercel', 'Render', 
   ];
 
   const softSkills = [
