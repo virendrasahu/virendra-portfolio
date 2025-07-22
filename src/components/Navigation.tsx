@@ -38,7 +38,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold bg-hero-gradient bg-clip-text text-transparent">
+          <div className="text-3xl text-shadow-sm font-bold bg-hero-gradient bg-clip-text text-transparent">
             Virendra Sahu
           </div>
 
