@@ -90,6 +90,7 @@ const Hero = () => {
             >
               View My Work
             </Button>
+
             <Button 
               variant="outline" 
               size="lg" 
@@ -98,10 +99,9 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
-          </div>
 
-          {/* Download Resume Button */}
-          <div className="mb-12">
+            {/* Download Resume Button */}
+          
             <Button 
               size="lg" 
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg rounded-xl border border-white/10"
@@ -117,6 +117,7 @@ const Hero = () => {
             >
               Download Resume
             </Button>
+         
           </div>
 
           {/* Scroll Indicator */}
