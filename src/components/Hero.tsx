@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-glow border-4 border-white/20">
             <img 
-              src="/lovable-uploads/f220cb50-0024-4aeb-9898-d69345fae51a.png" 
+              src="https://res.cloudinary.com/dmljpnbpu/image/upload/v1753174614/1752389260340_50_-_Copy_1_wv4lcf.jpg" 
               alt="Virendra Sahu - Profile" 
               className="w-full h-full object-cover"
             />
