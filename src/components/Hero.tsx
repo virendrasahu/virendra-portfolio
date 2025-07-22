@@ -107,8 +107,8 @@ const Hero = () => {
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg rounded-xl border border-white/10"
               onClick={() => {
                 const link = document.createElement('a');
-                link.href = '/Virendra_Sahu_Resume.pdf';
-                link.download = 'Virendra_Sahu_Resume.pdf';
+                link.href = 'https://drive.google.com/file/d/1qLJ8JcBXz6MGc7Rep1cwElUdZCsbwqj4/view?usp=drive_link';
+                link.download = 'https://drive.google.com/file/d/1qLJ8JcBXz6MGc7Rep1cwElUdZCsbwqj4/view?usp=drive_link';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
