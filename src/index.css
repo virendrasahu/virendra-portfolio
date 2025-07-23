@@ -36,7 +36,7 @@
 
     /* Portfolio specific colors */
     --hero-gradient: linear-gradient(135deg, hsl(263 70% 50%), hsl(243 75% 59%));
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 4.8% 97.9%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(240 4.8% 97.9% / 0.9));
     --accent-gradient: linear-gradient(135deg, hsl(263 70% 50%), hsl(280 100% 70%));
     
     /* Shadows */
@@ -101,6 +101,9 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Dark mode specific gradients */
+    --card-gradient: linear-gradient(145deg, hsl(240 10% 3.9% / 0.8), hsl(240 3.7% 15.9% / 0.8));
   }
 }
 

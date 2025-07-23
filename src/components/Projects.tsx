@@ -72,7 +72,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 backdrop-blur-sm bg-background/80">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -88,7 +88,7 @@ const Projects = () => {
               {projects.filter(project => project.category === "AI & Modern Web Projects").map((project, index) => (
                 <Card 
                   key={index} 
-                  className="bg-card-gradient border-border/20 shadow-card hover:shadow-glow transition-all duration-300 group"
+                  className="backdrop-blur-md bg-card/80 border-border/20 shadow-card hover:shadow-glow transition-all duration-300 group"
                 >
                   <CardHeader>
                     <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors">
@@ -166,7 +166,7 @@ const Projects = () => {
             {projects.filter(project => project.category === "MERN & Web Projects").map((project, index) => (
               <Card 
                 key={index} 
-                className="bg-card-gradient border-border/20 shadow-card hover:shadow-glow transition-all duration-300 group"
+                className="backdrop-blur-md bg-card/80 border-border/20 shadow-card hover:shadow-glow transition-all duration-300 group"
               >
                 <CardHeader>
                   <CardTitle className="text-xl text-primary group-hover:text-accent transition-colors">

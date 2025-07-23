@@ -34,7 +34,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 bg-background">
+    <section id="education" className="py-20 backdrop-blur-sm bg-background/80">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -54,7 +54,7 @@ const Education = () => {
           {/* Education Timeline */}
           <div className="space-y-6">
             {educationData.map((education, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="group backdrop-blur-md bg-card/80 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
                     {/* Icon */}

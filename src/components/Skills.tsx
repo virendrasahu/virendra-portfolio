@@ -45,7 +45,7 @@ const Skills = () => {
   const softSkillIcons = [Lightbulb, Brain, Code, Wrench];
 
   return (
-    <section id="skills" className="py-20 bg-muted/20">
+    <section id="skills" className="py-20 backdrop-blur-sm bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -63,7 +63,7 @@ const Skills = () => {
                 return (
                   <Card 
                     key={category} 
-                    className="bg-card-gradient border-border/20 shadow-card hover:shadow-glow hover-scale transition-all duration-300 animate-fade-in"
+                    className="backdrop-blur-md bg-card/80 border-border/20 shadow-card hover:shadow-glow hover-scale transition-all duration-300 animate-fade-in"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <CardHeader>
@@ -94,7 +94,7 @@ const Skills = () => {
           {/* Tools & Technologies */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-center mb-8 text-primary">Tools & Technologies</h3>
-            <Card className="bg-card-gradient border-border/20 shadow-card animate-fade-in hover-scale transition-all duration-300">
+            <Card className="backdrop-blur-md bg-card/80 border-border/20 shadow-card animate-fade-in hover-scale transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex flex-wrap justify-center gap-3">
                   {tools.map((tool, index) => (
@@ -121,7 +121,7 @@ const Skills = () => {
                 return (
                   <Card 
                     key={skill} 
-                    className="bg-card-gradient border-border/20 shadow-card hover:shadow-glow hover-scale transition-all duration-300 animate-fade-in"
+                    className="backdrop-blur-md bg-card/80 border-border/20 shadow-card hover:shadow-glow hover-scale transition-all duration-300 animate-fade-in"
                     style={{ animationDelay: `${index * 150}ms` }}
                   >
                     <CardContent className="p-6 text-center">

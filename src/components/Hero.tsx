@@ -1,8 +1,11 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTheme } from 'next-themes';
 import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
+  const { theme } = useTheme();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -12,18 +15,20 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Developer workspace" 
-          className="w-full h-full object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-hero-gradient opacity-90" />
-      </div>
+      {/* Background - only show in light mode */}
+      {theme === 'light' && (
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroBg} 
+            alt="Developer workspace" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-hero-gradient opacity-90" />
+        </div>
+      )}
 
       {/* Content */}
-      <div className="container mx-auto px-4 z-10 text-center">
+      <div className={`container mx-auto px-4 z-10 text-center ${theme === 'dark' ? 'backdrop-blur-sm bg-background/20 rounded-3xl py-16 border border-white/10' : ''}`}>
         <div className="max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 mt-20 rounded-full overflow-hidden shadow-glow border-4 border-white/20">
@@ -36,16 +41,22 @@ const Hero = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <span className={theme === 'dark' 
+              ? "bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent" 
+              : "bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"}>
               Virendra Sahu
             </span>
           </h1>
 
-          <h2 className="text-xl md:text-2xl text-gray-300 mb-6 font-medium">
+          <h2 className={`text-xl md:text-2xl mb-6 font-medium ${
+            theme === 'dark' ? 'text-gray-300' : 'text-foreground'
+          }`}>
             Full Stack Developer | GenAI Enthusiast
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed ${
+            theme === 'dark' ? 'text-gray-400' : 'text-muted-foreground'
+          }`}>
             Building scalable web solutions using MERN stack and AI tools, driven by curiosity and creativity.
           </p>
 
@@ -54,7 +65,9 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              className={theme === 'dark' 
+                ? "bg-white/10 border-white/20 hover:bg-white/20 text-white" 
+                : "border-primary/30 hover:bg-primary/10 text-primary"}
               asChild
             >
               <a href="https://github.com/virendrasahu" target="_blank" rel="noopener noreferrer">
@@ -64,7 +77,9 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              className={theme === 'dark' 
+                ? "bg-white/10 border-white/20 hover:bg-white/20 text-white" 
+                : "border-primary/30 hover:bg-primary/10 text-primary"}
               asChild
             >
               <a href="https://www.linkedin.com/in/virendra-sahu-14117121a/" target="_blank" rel="noopener noreferrer">
@@ -74,7 +89,9 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="icon" 
-              className="bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              className={theme === 'dark' 
+                ? "bg-white/10 border-white/20 hover:bg-white/20 text-white" 
+                : "border-primary/30 hover:bg-primary/10 text-primary"}
               onClick={() => scrollToSection('contact')}
             >
               <Mail className="h-5 w-5" />
@@ -94,7 +111,9 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              className={theme === 'dark' 
+                ? "bg-white/10 border-white/20 hover:bg-white/20 text-white" 
+                : "border-primary/30 hover:bg-primary/10 text-primary"}
               onClick={() => scrollToSection('contact')}
             >
               Get In Touch
@@ -123,7 +142,9 @@ const Hero = () => {
           {/* Scroll Indicator */}
           <button 
             onClick={() => scrollToSection('about')}
-            className="animate-bounce text-white/60 hover:text-white transition-colors"
+            className={`animate-bounce transition-colors ${
+              theme === 'dark' ? 'text-white/60 hover:text-white' : 'text-foreground/60 hover:text-foreground'
+            }`}
           >
             <ArrowDown className="h-6 w-6 mx-auto" />
           </button>

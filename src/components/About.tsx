@@ -2,7 +2,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 backdrop-blur-sm bg-background/80">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -11,7 +11,7 @@ const About = () => {
           
           <div className="w-24 h-1 bg-accent-gradient mx-auto mb-12" />
 
-          <Card className="bg-card-gradient border-border/20 shadow-card">
+          <Card className="backdrop-blur-md bg-card/80 border-border/20 shadow-card">
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
                 <div className="order-2 md:order-1 space-y-6">

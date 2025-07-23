@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/20">
+    <section id="contact" className="py-20 backdrop-blur-sm bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -22,7 +22,7 @@ const Contact = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Info */}
-            <Card className="bg-card-gradient border-border/20 shadow-card">
+            <Card className="backdrop-blur-md bg-card/80 border-border/20 shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-primary mb-6">Contact Information</h3>
                 
@@ -51,7 +51,7 @@ const Contact = () => {
             </Card>
 
             {/* Social Links */}
-            <Card className="bg-card-gradient border-border/20 shadow-card">
+            <Card className="backdrop-blur-md bg-card/80 border-border/20 shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-primary mb-6">Connect With Me</h3>
                 
@@ -106,7 +106,7 @@ const Contact = () => {
 
           {/* CTA Section */}
           <div className="text-center mt-12">
-            <Card className="bg-card-gradient border-border/20 shadow-card">
+            <Card className="backdrop-blur-md bg-card/80 border-border/20 shadow-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-primary mb-4">Let's Work Together</h3>
                 <p className="text-muted-foreground mb-6">

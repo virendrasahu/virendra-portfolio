@@ -56,7 +56,7 @@ const Certificates = () => {
   ];
 
   return (
-    <section id="certificates" className="py-20 bg-muted/20">
+    <section id="certificates" className="py-20 backdrop-blur-sm bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -79,7 +79,7 @@ const Certificates = () => {
             {certificates.map((certificate, index) => (
               <Card 
                 key={index} 
-                className="group bg-card-gradient border-border/20 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="group backdrop-blur-md bg-card/80 border-border/20 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105 cursor-pointer"
                 onClick={() => window.open(certificate.url, '_blank')}
               >
                 <CardContent className="p-0">
