@@ -55,7 +55,7 @@ const Hero = () => {
           </h2>
 
           <p className={`text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed ${
-            theme === 'dark' ? 'text-gray-400' : 'text-muted-foreground'
+            theme === 'light' ? 'text-gray-400' : 'text-muted-foreground'
           }`}>
             Building scalable web solutions using MERN stack and AI tools, driven by curiosity and creativity.
           </p>
