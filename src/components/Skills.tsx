@@ -78,7 +78,7 @@ const Skills = () => {
                           <Badge 
                             key={skill.name} 
                             variant="secondary" 
-                            className="bg-accent/20 text-accent hover:bg-accent/30 transition-colors"
+                            className="bg-accent/20 text-light hover:bg-accent/30 transition-colors"
                           >
                             {skill.name}
                           </Badge>
