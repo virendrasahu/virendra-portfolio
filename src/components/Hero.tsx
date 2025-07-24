@@ -41,9 +41,7 @@ const Hero = () => {
 
           {/* Main Content */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className={theme === 'dark' 
-              ? "bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent" 
-              : "text-foreground drop-shadow-lg"}>
+            <span className="text-white drop-shadow-lg">
               Virendra Sahu
             </span>
           </h1>

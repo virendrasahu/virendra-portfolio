@@ -40,11 +40,7 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className={`text-xl drop-shadow-xl font-bold ${
-            theme === 'dark' 
-              ? 'bg-hero-gradient bg-clip-text text-transparent' 
-              : 'text-foreground'
-          }`}>
+          <div className="text-xl drop-shadow-xl font-bold text-white">
             Virendra Sahu
           </div>
 
