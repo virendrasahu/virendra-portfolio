@@ -115,7 +115,7 @@ const Skills = () => {
           {/* Soft Skills */}
           <div>
             <h3 className="text-2xl font-bold text-center mb-8 text-primary">Soft Skills</h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid xs:grid-cols-2 lg:grid-cols-4 gap-4">
               {softSkills.map((skill, index) => {
                 const Icon = softSkillIcons[index];
                 return (
