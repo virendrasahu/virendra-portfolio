@@ -61,14 +61,14 @@ const Projects = () => {
       github: "https://github.com/virendrasahu",
       category: "MERN & Web Projects"
     },
-    {
-      title: "Food Munch",
-      description: "A static food menu website with product videos, fully responsive using Bootstrap.",
-      technologies: ["HTML", "CSS", "Bootstrap"],
-      liveDemo: "http://foodiechoice.ccbp.tech",
-      github: "https://github.com/virendrasahu",
-      category: "MERN & Web Projects"
-    }
+    // {
+    //   title: "Food Munch",
+    //   description: "A static food menu website with product videos, fully responsive using Bootstrap.",
+    //   technologies: ["HTML", "CSS", "Bootstrap"],
+    //   liveDemo: "http://foodiechoice.ccbp.tech",
+    //   github: "https://github.com/virendrasahu",
+    //   category: "MERN & Web Projects"
+    // }
   ];
 
   return (
